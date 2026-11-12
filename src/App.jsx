@@ -12,7 +12,7 @@ export default function App() {
       <div className="container py-4">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/film/:name" element={<FilmDetail />} />
+          <Route path="/film/:id" element={<FilmDetail />} />
           <Route path="/quiz" element={<Quiz />} />
         </Routes>
       </div>
