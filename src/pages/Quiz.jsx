@@ -1,3 +1,3 @@
 export default function Quiz() {
-  return <h2>Anime Quiz Page</h2>;
+  return <h2>Film Quiz Page</h2>;
 }
