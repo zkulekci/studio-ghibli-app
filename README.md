@@ -1,16 +1,74 @@
-# React + Vite
+# Studio Ghibli Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Single Page Application (SPA) built with React, Vite, and Bootstrap, showcasing the films of Studio Ghibli via the Studio Ghibli API.
 
-Currently, two official plugins are available:
+## Live Demo
+You can view the live application here: [https://zkulekci.github.io/studio-ghibli-app/](https://zkulekci.github.io/studio-ghibli-app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
+- **Film Catalog & Exploration**: Browse through Studio Ghibli films fetched dynamically from the API.
+- **Detailed Film Views**: View detailed information for each film, including director, producer, release date, running time, description, and Rotten Tomatoes score.
+- **Interactive Quiz Engine**: Test your Ghibli knowledge with a dynamic quiz featuring randomized questions and duplicate-answer prevention.
+- **Responsive UI**: Styled with Bootstrap 5 and enhanced with custom branding and icons (`lucide-react`).
+- **SPA Routing**: Configured with `react-router-dom` (`BrowserRouter` with `basename` and GitHub Pages 404 fallback) for seamless navigation across subpaths.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
+- **Framework**: React (with Vite)
+- **Styling**: Bootstrap 5, Custom CSS
+- **Routing**: React Router DOM
+- **Icons**: Lucide React
+- **Data Source**: [Studio Ghibli REST API](https://ghibliapi.vercel.app/films)
+- **Hosting & Deployment**: [GitHub Pages](https://zkulekci.github.io/studio-ghibli-app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Project Structure
+
+studio-ghibli-app/
+├── public/
+│   ├── 404.html          # SPA routing fallback for GitHub Pages
+│   └── favicon.svg       # Custom Ghibli-themed favicon
+├── src/
+│   ├── assets/           # Custom Totoro SVG logo
+│   ├── components/       # Reusable Navbar component
+│   ├── pages/            # View pages (Home, FilmDetail, Quiz)
+│   ├── App.jsx           # Main routing and layout setup
+│   ├── main.jsx          # Application entry point
+│   └── index.css         # Global styles
+├── package.json
+└── vite.config.js
+
+## Getting Started & Local Development
+
+To run this project locally on your machine, follow these steps:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/zkulekci/studio-ghibli-app.git
+cd studio-ghibli-app
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Run the development server
+```bash
+npm run dev
+```
+Open your browser and navigate to `http://localhost:5173`.
+
+### 4. Build for production
+```bash
+npm run build
+```
+
+### 5. Deploy to GitHub Pages
+```bash
+npm run deploy
+```
