@@ -7,7 +7,7 @@ import Quiz from './pages/Quiz';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Navbar />
       <div className="container py-4">
         <Routes>
