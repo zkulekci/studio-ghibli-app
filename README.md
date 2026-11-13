@@ -28,6 +28,7 @@ You can view the live application here: [https://zkulekci.github.io/studio-ghibl
 
 ## Project Structure
 
+```text
 studio-ghibli-app/
 ├── public/
 │   ├── 404.html          # SPA routing fallback for GitHub Pages
@@ -41,6 +42,7 @@ studio-ghibli-app/
 │   └── index.css         # Global styles
 ├── package.json
 └── vite.config.js
+```
 
 ## Getting Started & Local Development
 
